@@ -32,6 +32,13 @@
     </dependency>
 
     <dependency>
+      <groupId>com.innoq</groupId>
+      <artifactId>junit5-logging-extension</artifactId>
+      <version>0.2.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
