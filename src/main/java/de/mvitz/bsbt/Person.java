@@ -1,6 +1,8 @@
 package de.mvitz.bsbt;
 
-public class Person {
+import java.util.Objects;
+
+public final class Person {
 
     private String name;
     private int age;
@@ -42,5 +44,20 @@ public class Person {
             return age >= 21;
         }
         return age >= 18;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, country);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Person other)) {
+            return false;
+        }
+        return Objects.equals(name, other.name)
+               && Objects.equals(age, other.age)
+               && Objects.equals(country, other.country);
     }
 }
