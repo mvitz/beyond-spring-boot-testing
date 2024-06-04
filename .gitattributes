@@ -9,6 +9,7 @@
 *.md text
 *.properties text
 *.xml text
+*.yml text
 
 
 # These files are binary and should be left untouched
